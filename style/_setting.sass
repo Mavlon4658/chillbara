@@ -1,0 +1,120 @@
+*
+ box-sizing: border-box
+
+@font-face
+ font-family: 'Gill Sans Ultra Bold'
+ src: url(../fonts/Gill_Sans_Ultra_Bold.woff2)
+ src: url(../fonts/Gill_Sans_Ultra_Bold.woff)
+ font-weight: 400
+ font-style: normal
+
+body
+ color: #fff
+ background: #2C0C0C
+ font-family: Balsamiq Sans
+ font-size: 20px
+ font-weight: 400
+ line-height: 26px
+ text-align: left
+main
+ overflow-x: hidden
+
+
+
+.container 
+ max-width: 1218px
+ margin: auto
+ width: 90%
+
+.grid-wrapper
+ display: grid
+ &__three
+  grid-template-columns: repeat(3, 1fr)
+  gap: 24px
+  margin: 0 auto
+ &__two
+  grid-template-columns: 1fr 1fr
+  gap: 61px
+
+
+section 
+ padding-bottom: 150px
+ padding-top: 100px
+ position: relative
+ &:nth-of-type(even)
+  background-color: #BD7B50
+  
+
+h1
+ font-family: Gill Sans Ultra Bold
+ font-size: 70px
+ font-weight: 400
+ line-height: 77px
+ margin: 0
+ padding: 0
+ margin-bottom: 24px
+
+h2 
+ font-family: Gill Sans Ultra Bold
+ font-size: 64px
+ font-weight: 400
+ line-height: 70.4px
+ text-align: center
+ text-transform: capitalize
+ margin: 0
+ padding: 0
+ margin-bottom: 60px
+
+h3, .title
+ font-family: Gill Sans Ultra Bold
+ font-size: 32px
+ font-weight: 400
+ line-height: 35.2px
+ margin: 0
+ padding: 0
+
+
+
+p, li
+ font-family: Balsamiq Sans
+ font-size: 20px
+ font-weight: 400
+ line-height: 26px
+ margin: 0
+ padding: 0
+
+a 
+ text-decoration: none
+ color: #FFFFFF
+.button
+ display: inline-block
+ border-radius: 8px
+ background: linear-gradient(86.2deg, #8E2FEB 0%, #20C3C3 100%)
+ padding: 12px 24px 10px 
+ color: #F8F8F8
+ font-size: 20px
+ font-weight: 400
+ line-height: 24px
+ cursor: pointer
+ &:hover 
+  transition: 250ms
+  background: linear-gradient(86.2deg, #20C3C3 0%, #8E2FEB 100%)
+  scale: 1.05
+ &-group 
+  display: grid
+  grid-template-columns: repeat(3, auto)
+  gap: 16px
+
+.line
+ width: 100% 
+ position: absolute
+ right: 0
+ bottom: 0
+ left: 0
+ object-fit: cover
+ pointer-events: none
+ &-light 
+  margin-bottom: -4px
+ &-top
+  top: 0
+  bottom: auto

@@ -1,0 +1,25 @@
+.main 
+ position: relative
+ height: 100svh
+ .container 
+  display: flex
+  align-items: center
+  height: 100%
+ &-wrapper 
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: 50px
+  align-items: center
+ &-video
+  max-width: 660px
+  object-fit: cover
+  border-radius: 20px
+  overflow: hidden
+  video 
+   width: 100%
+   height: auto
+   margin-left: 2px
+ &-info
+  max-width: 580px
+  p 
+   margin-bottom: 25px
